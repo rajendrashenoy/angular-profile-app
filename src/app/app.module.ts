@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavigatorComponent } from './main-navigator/main-navigator.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { ShortbioComponent } from './components/shortbio/shortbio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavigatorComponent
+    MainNavigatorComponent,
+    ShortbioComponent
   ],
   imports: [
     BrowserModule,

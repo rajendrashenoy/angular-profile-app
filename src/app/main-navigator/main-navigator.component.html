@@ -5,9 +5,10 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="shortbio" routerLinkActive="active">Short-bio</a>
+      <a mat-list-item href="#">Resume</a>
+      <a mat-list-item href="#">Full stack profile</a>
+      <a mat-list-item href="#">Certificates</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -20,7 +21,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>angular-profile-app</span>
+      <span>Raj Shenoy - Online profile</span>
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
