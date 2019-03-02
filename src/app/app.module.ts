@@ -10,6 +10,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { ShortbioComponent } from './components/shortbio/shortbio.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { FullstackComponent } from './components/fullstack/fullstack.component';
+import { CvComponent } from './component/cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FullstackComponent } from './components/fullstack/fullstack.component';
     MainNavigatorComponent,
     ShortbioComponent,
     ResumeComponent,
-    FullstackComponent
+    FullstackComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
