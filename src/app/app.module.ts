@@ -9,13 +9,15 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { ShortbioComponent } from './components/shortbio/shortbio.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { FullstackComponent } from './components/fullstack/fullstack.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavigatorComponent,
     ShortbioComponent,
-    ResumeComponent
+    ResumeComponent,
+    FullstackComponent
   ],
   imports: [
     BrowserModule,
