@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {CertificatesService} from 'src/app/services/certificates.service';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
+
+import {Certificates} from 'src/app/Models/Certificates';
 
 @Component({
   selector: 'app-cv',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvComponent implements OnInit {
 
-  constructor() { }
+  certificates:Certificates[];
 
+  constructor(private cetificateservice:CertificatesService) { }
+  
   ngOnInit() {
+    this.cetificateservice.getCertificates().subscribe(Certificates => 
+    {
+      this.certificates = Certificates;
+    });
   }
 
 }
