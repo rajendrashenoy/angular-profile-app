@@ -13,9 +13,10 @@ export class CvComponent implements OnInit {
 
   certificates:Certificates[];
 
-  constructor(private cetificateservice:CertificatesService) { }
+  constructor(private cetificateservice:CertificatesService) { alert("hi");}
   
   ngOnInit() {
+
     this.cetificateservice.getCertificates().subscribe(Certificates => 
     {
       this.certificates = Certificates;

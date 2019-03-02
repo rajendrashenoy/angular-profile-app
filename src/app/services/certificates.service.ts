@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import { Observable} from 'rxjs';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 
-
 import {Certificates} from 'src/app/Models/Certificates';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class CertificatesService {
 
   certificatesUrl:string = 'https://rajshenoyrestapi.herokuapp.com/cerificates';
@@ -17,8 +17,7 @@ export class CertificatesService {
 
   getCertificates():Observable<Certificates[]> {
 
-    alert("hi");
-    return this.http.get<Certificates[]>(this.certificatesUrl);
+        return this.http.get<Certificates[]>(this.certificatesUrl);
 
   }
 }
